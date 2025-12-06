@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "appxlab.space - Lightning Fast App Development",
     description: "We design lightning fast apps for the world",
+    icons: {
+        icon: "/favicon.svg",
+    },
 };
 
 export default function RootLayout({
