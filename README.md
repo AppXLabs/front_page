@@ -2,6 +2,8 @@
 
 A premium Next.js landing page for appxlab.space featuring an interactive 3D particle ring background and modern dark theme design.
 
+**🚀 Live Site**: [https://front-page-sigma-seven.vercel.app](https://front-page-sigma-seven.vercel.app)
+
 ## Features
 
 - ✨ Interactive 3D particle ring background using React Three Fiber
