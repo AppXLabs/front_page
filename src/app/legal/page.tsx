@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { getAllApps, getDocument, isValidApp, isValidDocType } from "@/data/utils";
 import { documentTypes } from "@/data/index";
 
-export default function LegalDocsPage() {
+function LegalDocsContent() {
     const searchParams = useSearchParams();
     const [selectedApp, setSelectedApp] = useState<string>("notifype");
     const [selectedDocType, setSelectedDocType] = useState<string>("terms");
@@ -26,9 +26,7 @@ export default function LegalDocsPage() {
         }
     }, [searchParams]);
 
-    const currentDocument = getDocument(selectedApp, selectedDocType as 'privacy' | 'terms');
-
-    return (
+    const currentDocument = getDocument(selectedApp, selectedDocType as 'privacy' | 'terms'); return (
         <div className="min-h-screen bg-slate-900 text-slate-200">
             {/* Header */}
             <header className="border-b border-slate-700 bg-slate-800">
@@ -58,8 +56,8 @@ export default function LegalDocsPage() {
                                 key={app.id}
                                 onClick={() => setSelectedApp(app.id)}
                                 className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg text-left transition-colors ${selectedApp === app.id
-                                        ? "bg-slate-700 text-white"
-                                        : "text-slate-300 hover:bg-slate-700 hover:text-white"
+                                    ? "bg-slate-700 text-white"
+                                    : "text-slate-300 hover:bg-slate-700 hover:text-white"
                                     }`}
                             >
                                 <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-semibold text-sm">
@@ -85,8 +83,8 @@ export default function LegalDocsPage() {
                                 key={docType.id}
                                 onClick={() => setSelectedDocType(docType.id)}
                                 className={`w-full px-3 py-2 rounded-lg text-left transition-colors ${selectedDocType === docType.id
-                                        ? "bg-slate-700 text-white"
-                                        : "text-slate-300 hover:bg-slate-700 hover:text-white"
+                                    ? "bg-slate-700 text-white"
+                                    : "text-slate-300 hover:bg-slate-700 hover:text-white"
                                     }`}
                             >
                                 {docType.name}
@@ -162,5 +160,20 @@ export default function LegalDocsPage() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function LegalDocsPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-slate-900 text-slate-200 flex items-center justify-center">
+                <div className="text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-500 mx-auto mb-4"></div>
+                    <p className="text-slate-400">Loading legal documents...</p>
+                </div>
+            </div>
+        }>
+            <LegalDocsContent />
+        </Suspense>
     );
 }
