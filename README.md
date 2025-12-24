@@ -136,8 +136,4 @@ The optimized build will be in the `.next` folder.
 This project is proprietary software for appxlab.space.
 
 ## Contact
-
 For questions or support, contact: hello@appxlab.space
-
-// hook for prod deploy
-<!-- https://api.vercel.com/v1/integrations/deploy/prj_AkjeGzU5enLIhADWy7xpDv6sQR7e/2AEt1bYlJ4 -->
