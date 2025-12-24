@@ -19,7 +19,12 @@ export default function PrivacyPolicy() {
 
                     <section>
                         <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-                        <p>If you have any questions about this Privacy Policy, please contact us at privacy@appxlab.space</p>
+                        <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:info@appxlab.space" className="text-indigo-400 hover:text-indigo-300 underline">info@appxlab.space</a></p>
+                    </section>
+
+                    <section>
+                        <h2 className="text-2xl font-semibold mb-4">Delete Your Data</h2>
+                        <p>If you would like us to delete personal data associated with the Notifype app, please email <a href="mailto:info@appxlab.space" className="text-indigo-400 hover:text-indigo-300 underline">info@appxlab.space</a> with your request and any relevant account details. We'll respond with steps to verify the request and complete the deletion as soon as reasonably possible.</p>
                     </section>
                 </div>
 

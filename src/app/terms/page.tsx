@@ -24,7 +24,7 @@ export default function TermsAndConditions() {
 
                     <section>
                         <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-                        <p>For questions regarding these terms, please contact us at legal@appxlab.space</p>
+                        <p>For questions regarding these terms, please contact us at <a href="mailto:info@appxlab.space" className="text-indigo-400 hover:text-indigo-300 underline">info@appxlab.space</a></p>
                     </section>
                 </div>
 
