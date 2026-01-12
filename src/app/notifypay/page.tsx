@@ -195,7 +195,7 @@ export default function NotifyPayPage() {
                                     {"★★★★★"}
                                 </div>
                                 <p className="text-gray-600 mb-6 italic">
-                                    "Since I started using NotifyPay, I never have to worry about checking my phone for payments. It's so loud and clear!"
+                                    &quot;Since I started using NotifyPay, I never have to worry about checking my phone for payments. It&apos;s so loud and clear!&quot;
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center font-bold text-gray-500">
