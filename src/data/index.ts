@@ -1,5 +1,6 @@
 import { App } from "./types";
 import { notifypayDocuments } from "./apps/notifypay";
+import { jaanujiDocuments } from "./apps/jaanuji";
 
 export const apps: App[] = [
     {
@@ -8,6 +9,13 @@ export const apps: App[] = [
         icon: "N",
         description: "Smart notification management app",
         documents: notifypayDocuments
+    },
+    {
+        id: "jaanuji",
+        name: "Jaanu Ji",
+        icon: "♥",
+        description: "Video Chat. Joy. Love.",
+        documents: jaanujiDocuments
     }
     // Add more apps here as they are created
 ];
