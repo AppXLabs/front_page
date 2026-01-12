@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
                     <section>
                         <h2 className="text-2xl font-semibold mb-4">Delete Your Data</h2>
-                        <p>If you would like us to delete personal data associated with the Notifype app, please email <a href="mailto:info@appxlab.space" className="text-indigo-400 hover:text-indigo-300 underline">info@appxlab.space</a> with your request and any relevant account details. We will respond with steps to verify the request and complete the deletion as soon as reasonably possible.</p>
+                        <p>If you would like us to delete personal data associated with the Notifypay app, please email <a href="mailto:info@appxlab.space" className="text-indigo-400 hover:text-indigo-300 underline">info@appxlab.space</a> with your request and any relevant account details. We will respond with steps to verify the request and complete the deletion as soon as reasonably possible.</p>
                     </section>
                 </div>
 

@@ -1,13 +1,13 @@
 import { App } from "./types";
-import { notifypeDocuments } from "./apps/notifype";
+import { notifypayDocuments } from "./apps/notifypay";
 
 export const apps: App[] = [
     {
-        id: "notifype",
-        name: "Notifype",
+        id: "notifypay",
+        name: "NotifyPay",
         icon: "N",
         description: "Smart notification management app",
-        documents: notifypeDocuments
+        documents: notifypayDocuments
     }
     // Add more apps here as they are created
 ];

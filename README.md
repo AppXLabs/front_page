@@ -81,22 +81,22 @@ src/
 The application supports multiple ways to access legal documents:
 
 ### Direct App Document Links (for mobile apps)
-- `/notifype/privacy` - Notifype Privacy Policy (standalone page)
-- `/notifype/terms` - Notifype Terms & Conditions (standalone page)
+- `/notifypay/privacy` - Notifypay Privacy Policy (standalone page)
+- `/notifypay/terms` - Notifypay Terms & Conditions (standalone page)
 
 ### Document Manager Views
 - `/legal` - Interactive 3-column legal document manager
-- `/legal?app=notifype&doc=privacy` - Direct link to specific document in manager
+- `/legal?app=notifypay&doc=privacy` - Direct link to specific document in manager
 - `/apps` - Index of all apps with direct links to their documents
 
 ### Usage in Mobile Apps
 Use these URLs for linking from mobile applications:
 ```javascript
 // Privacy Policy
-const privacyUrl = "https://appxlab.space/notifype/privacy";
+const privacyUrl = "https://appxlab.space/notifypay/privacy";
 
 // Terms & Conditions  
-const termsUrl = "https://appxlab.space/notifype/terms";
+const termsUrl = "https://appxlab.space/notifypay/terms";
 ```
 
 ## Customization

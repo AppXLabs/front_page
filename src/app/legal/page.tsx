@@ -7,7 +7,7 @@ import { documentTypes } from "@/data/index";
 
 function LegalDocsContent() {
     const searchParams = useSearchParams();
-    const [selectedApp, setSelectedApp] = useState<string>("notifype");
+    const [selectedApp, setSelectedApp] = useState<string>("notifypay");
     const [selectedDocType, setSelectedDocType] = useState<string>("terms");
 
     const apps = getAllApps();

@@ -1,15 +1,15 @@
 import { AppLegalDocuments } from "../types";
 
-export const notifypeDocuments: AppLegalDocuments = {
+export const notifypayDocuments: AppLegalDocuments = {
   privacy: {
-    title: "Notifype Privacy Policy",
+    title: "NotifyPay Privacy Policy",
     lastUpdated: "December 7, 2025",
     contactEmail: "info@appxlab.space",
     content: `
       <section>
         <h2>1. Information We Collect</h2>
         <p>
-          Notifype collects information you provide directly to us, such as when you create an account, 
+          NotifyPay collects information you provide directly to us, such as when you create an account, 
           configure notification preferences, or contact us for support.
         </p>
       </section>
@@ -17,7 +17,7 @@ export const notifypeDocuments: AppLegalDocuments = {
       <section>
         <h2>2. How We Use Your Information</h2>
         <p>
-          We use the information we collect to provide, maintain, and improve Notifype's services, 
+          We use the information we collect to provide, maintain, and improve NotifyPay's services, 
           including to personalize your notification experience.
         </p>
       </section>
@@ -41,7 +41,7 @@ export const notifypeDocuments: AppLegalDocuments = {
       <section>
         <h2>5. Notification Data</h2>
         <p>
-          Notifype processes notification data locally on your device when possible. Some features 
+          NotifyPay processes notification data locally on your device when possible. Some features 
           may require cloud processing to provide enhanced functionality.
         </p>
       </section>
@@ -64,7 +64,7 @@ export const notifypeDocuments: AppLegalDocuments = {
       <section>
         <h2>8. Delete Your Data</h2>
         <p>
-          If you'd like us to remove personal data associated with your Notifype account, please email <a href="mailto:info@appxlab.space" style="color: #60a5fa; text-decoration: underline;">info@appxlab.space</a> with your request and any relevant account details. We'll reply with verification steps and process the deletion promptly.
+          If you'd like us to remove personal data associated with your NotifyPay account, please email <a href="mailto:info@appxlab.space" style="color: #60a5fa; text-decoration: underline;">info@appxlab.space</a> with your request and any relevant account details. We'll reply with verification steps and process the deletion promptly.
         </p>
       </section>
 
@@ -84,21 +84,21 @@ export const notifypeDocuments: AppLegalDocuments = {
     `
   },
   terms: {
-    title: "Notifype Terms & Conditions",
+    title: "NotifyPay Terms & Conditions",
     lastUpdated: "December 7, 2025",
     contactEmail: "info@appxlab.space",
     content: `
       <section>
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By downloading, accessing, or using Notifype, you agree to be bound by these Terms and Conditions.
+          By downloading, accessing, or using NotifyPay, you agree to be bound by these Terms and Conditions.
         </p>
       </section>
 
       <section>
         <h2>2. Description of Service</h2>
         <p>
-          Notifype is a smart notification management application that helps users organize and 
+          NotifyPay is a smart notification management application that helps users organize and 
           prioritize their notifications across different platforms and devices.
         </p>
       </section>
@@ -106,7 +106,7 @@ export const notifypeDocuments: AppLegalDocuments = {
       <section>
         <h2>3. User Accounts</h2>
         <p>
-          You may need to create an account to use certain features of Notifype. You are responsible 
+          You may need to create an account to use certain features of NotifyPay. You are responsible 
           for maintaining the confidentiality of your account credentials.
         </p>
       </section>
@@ -114,7 +114,7 @@ export const notifypeDocuments: AppLegalDocuments = {
       <section>
         <h2>4. Acceptable Use</h2>
         <p>
-          You agree not to use Notifype for any unlawful purposes or in any way that could damage, 
+          You agree not to use NotifyPay for any unlawful purposes or in any way that could damage, 
           disable, or impair the service.
         </p>
       </section>
@@ -130,7 +130,7 @@ export const notifypeDocuments: AppLegalDocuments = {
       <section>
         <h2>6. Limitation of Liability</h2>
         <p>
-          Notifype shall not be liable for any indirect, incidental, special, consequential, or 
+          NotifyPay shall not be liable for any indirect, incidental, special, consequential, or 
           punitive damages.
         </p>
       </section>
