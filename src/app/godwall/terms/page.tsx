@@ -25,7 +25,7 @@ export default function GodWallTermsPage() {
             <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <h1 className="text-4xl font-bold text-gray-900 mb-2">Terms &amp; Conditions</h1>
                 <p className="text-gray-600 mb-8">
-                    For <strong>Hindu God Wallpapers HD – Bhakti Images</strong> (referred to as "God Wallpapers")
+                    For <strong>Hindu God Wallpapers HD – Bhakti Images</strong> (referred to as &quot;God Wallpapers&quot;)
                 </p>
                 <p className="text-sm text-gray-500 mb-12">Last updated: January 19, 2025</p>
 
@@ -82,7 +82,7 @@ export default function GodWallTermsPage() {
                         </p>
                         <ul className="list-disc pl-6 text-gray-700 space-y-2">
                             <li>Maintaining the confidentiality of your device</li>
-                            <li>Ensuring your device meets the app's requirements</li>
+                            <li>Ensuring your device meets the app&apos;s requirements</li>
                             <li>Using the app respectfully and in accordance with Hindu traditions</li>
                             <li>Reporting any bugs or issues you encounter</li>
                         </ul>
@@ -91,7 +91,7 @@ export default function GodWallTermsPage() {
                     <section className="mb-8">
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Disclaimer of Warranties</h2>
                         <p className="text-gray-700 leading-relaxed">
-                            The app is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express
+                            The app is provided &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; without warranties of any kind, either express
                             or implied. We do not guarantee that the app will be error-free, uninterrupted, or free from
                             viruses or other harmful components.
                         </p>

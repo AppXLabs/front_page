@@ -25,7 +25,7 @@ export default function GodWallPrivacyPage() {
             <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <h1 className="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
                 <p className="text-gray-600 mb-8">
-                    For <strong>Hindu God Wallpapers HD – Bhakti Images</strong> (referred to as "God Wallpapers")
+                    For <strong>Hindu God Wallpapers HD – Bhakti Images</strong> (referred to as &quot;God Wallpapers&quot;)
                 </p>
                 <p className="text-sm text-gray-500 mb-12">Last updated: January 19, 2025</p>
 
@@ -90,7 +90,7 @@ export default function GodWallPrivacyPage() {
                     </section>
 
                     <section className="mb-8">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Children's Privacy</h2>
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Children&apos;s Privacy</h2>
                         <p className="text-gray-700 leading-relaxed">
                             Our app is suitable for all ages. We do not knowingly collect personal information from children
                             under 13. If you believe we have collected such information, please contact us immediately.
@@ -119,7 +119,7 @@ export default function GodWallPrivacyPage() {
                             <strong>To request account deletion:</strong>
                         </p>
                         <p className="text-gray-700 leading-relaxed">
-                            Please send an email to <a href="mailto:info@appxlab.space" className="text-orange-600 hover:underline">info@appxlab.space</a> with the subject line "Account Deletion Request". Include your registered details in the email body. We will process your request and permanently delete your data within the timeframe required by applicable laws (usually within 30 days).
+                            Please send an email to <a href="mailto:info@appxlab.space" className="text-orange-600 hover:underline">info@appxlab.space</a> with the subject line &quot;Account Deletion Request&quot;. Include your registered details in the email body. We will process your request and permanently delete your data within the timeframe required by applicable laws (usually within 30 days).
                         </p>
                     </section>
 
@@ -127,7 +127,7 @@ export default function GodWallPrivacyPage() {
                         <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Changes to This Policy</h2>
                         <p className="text-gray-700 leading-relaxed">
                             We may update this privacy policy from time to time. We will notify you of any changes by posting
-                            the new policy on this page and updating the "Last updated" date.
+                            the new policy on this page and updating the &quot;Last updated&quot; date.
                         </p>
                     </section>
 
