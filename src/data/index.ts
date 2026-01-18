@@ -1,6 +1,7 @@
 import { App } from "./types";
 import { notifypayDocuments } from "./apps/notifypay";
 import { jaanujiDocuments } from "./apps/jaanuji";
+import { godwallDocuments } from "./apps/godwall";
 
 export const apps: App[] = [
     {
@@ -16,6 +17,13 @@ export const apps: App[] = [
         icon: "♥",
         description: "Video Chat. Joy. Love.",
         documents: jaanujiDocuments
+    },
+    {
+        id: "godwall",
+        name: "God Wallpapers",
+        icon: "✨",
+        description: "Hindu God Wallpapers HD",
+        documents: godwallDocuments
     }
     // Add more apps here as they are created
 ];
