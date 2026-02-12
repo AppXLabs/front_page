@@ -38,7 +38,7 @@ export default function Home() {
             <section className="relative py-14 md:py-16 lg:py-20 flex items-center min-h-[38vh]">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-snug tracking-tight">
-                        Designing the world's best apps
+                        Designing the world&apos;s best apps
                         <span className="block mt-2 md:mt-3 text-blue-600">
                             — fast, flawless, future-ready.
                         </span>
