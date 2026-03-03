@@ -7,6 +7,7 @@ export const APP_SUBDOMAINS = {
     notifypay: "/notifypay",
     jaanuji: "/jaanuji",
     godwall: "/godwall",
+    astroai: "/astroai",
     // Future apps can be added here
 } as const;
 
