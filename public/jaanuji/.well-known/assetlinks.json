@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jaanuji.app",
+      "sha256_cert_fingerprints": [
+        "66:06:6E:C2:B8:78:4B:CA:67:A0:6C:FA:01:DB:AD:4B:13:E1:17:7B:A9:D9:67:59:30:15:BD:0F:19:CC:C9:8E"
+      ]
+    }
+  }
+]
