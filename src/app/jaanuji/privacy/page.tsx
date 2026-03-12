@@ -26,8 +26,8 @@ export default function JaanuJiPrivacyPolicy() {
             <nav className="border-b border-pink-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
                     <Link href="/jaanuji" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                        <div className="w-8 h-8 bg-gradient-to-tr from-pink-500 to-rose-400 rounded-full flex items-center justify-center text-white shadow-sm">
-                            <Heart className="w-4 h-4 fill-current" />
+                        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm border border-pink-100">
+                            <img src="/jaanuji/logo.webp" alt="Jaanu Ji Logo" className="w-full h-full object-contain p-0.5" />
                         </div>
                         <span className="text-xl font-bold tracking-tight text-gray-900">Jaanu Ji</span>
                     </Link>

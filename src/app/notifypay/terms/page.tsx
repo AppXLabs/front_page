@@ -26,8 +26,8 @@ export default function NotifypayTermsAndConditions() {
             <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
                     <Link href="/notifypay" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                        <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                            N
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center overflow-hidden shadow-sm border border-blue-100">
+                            <img src="/notifypay/logo.webp" alt="NotifyPay Logo" className="w-full h-full object-contain p-1" />
                         </div>
                         <span className="text-xl font-bold tracking-tight text-blue-900">NotifyPay</span>
                     </Link>

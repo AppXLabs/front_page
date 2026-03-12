@@ -62,8 +62,18 @@ function LegalDocsContent() {
                                         : "border-transparent text-gray-600 hover:bg-white/50 hover:text-gray-900"
                                         } min-w-[200px] md:min-w-0`}
                                 >
-                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm shadow-sm ${selectedApp === app.id ? "bg-blue-600" : "bg-gray-400"}`}>
-                                        {app.icon}
+                                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden shadow-sm ${selectedApp === app.id ? "bg-white" : "bg-gray-100"}`}>
+                                        {app.logoPath ? (
+                                            <img
+                                                src={app.logoPath}
+                                                alt={app.name}
+                                                className="w-full h-full object-contain p-1"
+                                            />
+                                        ) : (
+                                            <div className={`w-full h-full flex items-center justify-center text-white font-bold text-sm ${selectedApp === app.id ? "bg-blue-600" : "bg-gray-400"}`}>
+                                                {app.icon}
+                                            </div>
+                                        )}
                                     </div>
                                     <div>
                                         <div className={`font-semibold ${selectedApp === app.id ? "text-gray-900" : "text-gray-600"}`}>{app.name}</div>
