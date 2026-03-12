@@ -2,12 +2,11 @@ import Link from "next/link";
 import { apps } from "@/data";
 import { ArrowRight, Sparkles, Smartphone, Heart, Sparkle } from "lucide-react";
 
-const LIVE_APP_ID = "notifypay";
-
 const appIcons: Record<string, React.ReactNode> = {
     notifypay: <Smartphone className="w-5 h-5" />,
     jaanuji: <Heart className="w-5 h-5" />,
     godwall: <Sparkle className="w-5 h-5" />,
+    astroai: <Sparkles className="w-5 h-5" />,
 };
 
 export default function Home() {
@@ -54,60 +53,70 @@ export default function Home() {
                         <p className="text-gray-600 max-w-2xl mx-auto">Discover our innovative mobile applications</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                        {apps.map((app) => {
-                            const isLive = app.id === LIVE_APP_ID;
-                            const cardContent = (
-                                <>
-                                    <div className="flex items-start justify-between mb-4">
-                                        <div className="flex items-center gap-4">
-                                            <div
-                                                className={`w-14 h-14 rounded-xl flex items-center justify-center text-white font-bold shadow-lg transition-transform ${
-                                                    isLive
-                                                        ? "bg-gradient-to-br from-blue-600 to-blue-700 hover:scale-105"
-                                                        : "bg-gradient-to-br from-gray-400 to-gray-500"
-                                                }`}
-                                            >
-                                                {appIcons[app.id] || app.icon}
+                        {apps
+                            .filter((app) => !app.isHidden)
+                            .map((app) => {
+                                const isLive = app.isLive;
+                                const cardContent = (
+                                    <>
+                                        <div className="flex items-start justify-between mb-4">
+                                            <div className="flex items-center gap-4">
+                                                <div
+                                                    className={`w-14 h-14 rounded-xl flex items-center justify-center text-white font-bold shadow-lg transition-transform overflow-hidden ${
+                                                        isLive
+                                                            ? "bg-gradient-to-br from-blue-600 to-blue-700 hover:scale-105"
+                                                            : "bg-gradient-to-br from-gray-400 to-gray-500"
+                                                    }`}
+                                                >
+                                                    {app.logoPath ? (
+                                                        <img
+                                                            src={app.logoPath}
+                                                            alt={app.name}
+                                                            className="w-full h-full object-cover"
+                                                        />
+                                                    ) : (
+                                                        appIcons[app.id] || app.icon
+                                                    )}
+                                                </div>
+                                                <div>
+                                                    <h3 className="font-bold text-lg text-gray-900">{app.name}</h3>
+                                                    {!isLive && (
+                                                        <span className="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-xs font-semibold uppercase tracking-wider">
+                                                            Coming soon
+                                                        </span>
+                                                    )}
+                                                </div>
                                             </div>
-                                            <div>
-                                                <h3 className="font-bold text-lg text-gray-900">{app.name}</h3>
-                                                {!isLive && (
-                                                    <span className="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 text-xs font-semibold uppercase tracking-wider">
-                                                        Coming soon
-                                                    </span>
-                                                )}
-                                            </div>
+                                            {isLive && (
+                                                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                            )}
                                         </div>
+                                        <p className="text-gray-600 leading-relaxed mb-4">{app.description}</p>
                                         {isLive && (
-                                            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                            <div className="flex items-center gap-2 text-blue-600 font-medium text-sm group-hover:gap-3 transition-all">
+                                                <span>Visit app</span>
+                                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                            </div>
                                         )}
+                                    </>
+                                );
+
+                                const cardClasses = `group relative rounded-2xl border bg-white p-6 md:p-8 transition-all duration-300 ${
+                                    isLive
+                                        ? "border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 cursor-pointer"
+                                        : "border-gray-200 shadow-sm opacity-75"
+                                }`;
+
+                                return isLive ? (
+                                    <Link key={app.id} href={`/${app.id}`} className="block h-full">
+                                        <div className={cardClasses}>{cardContent}</div>
+                                    </Link>
+                                ) : (
+                                    <div key={app.id} className={cardClasses}>
+                                        {cardContent}
                                     </div>
-                                    <p className="text-gray-600 leading-relaxed mb-4">{app.description}</p>
-                                    {isLive && (
-                                        <div className="flex items-center gap-2 text-blue-600 font-medium text-sm group-hover:gap-3 transition-all">
-                                            <span>Visit app</span>
-                                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                        </div>
-                                    )}
-                                </>
-                            );
-
-                            const cardClasses = `group relative rounded-2xl border bg-white p-6 md:p-8 transition-all duration-300 ${
-                                isLive
-                                    ? "border-gray-200 shadow-sm hover:shadow-xl hover:border-blue-200 hover:-translate-y-1 cursor-pointer"
-                                    : "border-gray-200 shadow-sm opacity-75"
-                            }`;
-
-                            return isLive ? (
-                                <Link key={app.id} href="/notifypay" className="block h-full">
-                                    <div className={cardClasses}>{cardContent}</div>
-                                </Link>
-                            ) : (
-                                <div key={app.id} className={cardClasses}>
-                                    {cardContent}
-                                </div>
-                            );
-                        })}
+                                );
+                            })}
                     </div>
                 </div>
             </section>

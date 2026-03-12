@@ -11,8 +11,14 @@ export default function JaanuJiPage() {
             <nav className="flex-shrink-0 border-b border-pink-100 bg-white/70 backdrop-blur-md">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <div className="w-10 h-10 bg-gradient-to-tr from-pink-500 to-rose-400 rounded-full flex items-center justify-center text-white shadow-lg shadow-pink-200">
-                            <Heart className="w-5 h-5 fill-current" />
+                        <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden shadow-lg shadow-pink-200">
+                            <Image
+                                src="/jaanuji/logo.webp"
+                                alt="Jaanu Ji Logo"
+                                width={40}
+                                height={40}
+                                className="object-cover"
+                            />
                         </div>
                         <span className="text-xl font-bold tracking-tight text-gray-900">Jaanu Ji</span>
                     </div>

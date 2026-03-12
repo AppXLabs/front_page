@@ -16,4 +16,7 @@ export interface App {
     icon: string;
     description: string;
     documents: AppLegalDocuments;
+    isLive: boolean;
+    isHidden?: boolean;
+    logoPath?: string;
 }

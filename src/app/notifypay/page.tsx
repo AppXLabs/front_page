@@ -11,8 +11,14 @@ export default function NotifyPayPage() {
             <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                            N
+                        <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
+                            <Image
+                                src="/notifypay/logo.webp"
+                                alt="NotifyPay Logo"
+                                width={32}
+                                height={32}
+                                className="object-cover"
+                            />
                         </div>
                         <span className="text-xl font-bold tracking-tight text-blue-900">NotifyPay</span>
                     </div>
@@ -217,8 +223,19 @@ export default function NotifyPayPage() {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-row justify-between items-start gap-8 mb-12">
                         <div className="max-w-xs">
-                            <span className="text-2xl font-bold text-blue-900">NotifyPay</span>
-                            <p className="text-gray-500 mt-2">Simplifying payments for every shop.</p>
+                            <div className="flex items-center gap-2 mb-2">
+                                <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
+                                    <Image
+                                        src="/notifypay/logo.webp"
+                                        alt="NotifyPay Logo"
+                                        width={32}
+                                        height={32}
+                                        className="object-cover"
+                                    />
+                                </div>
+                                <span className="text-2xl font-bold text-blue-900">NotifyPay</span>
+                            </div>
+                            <p className="text-gray-500">Simplifying payments for every shop.</p>
                         </div>
                         <a
                             href={googlePlayUrl}
