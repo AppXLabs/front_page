@@ -1,11 +1,13 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.app.notifypay",
       "sha256_cert_fingerprints": [
-        "6E:CA:A6:3C:D6:D5:3B:7D:C3:91:C9:8A:A9:5A:B7:FD:AB:E7:BD:38:8A:BC:20:93:8B:99:8E:E3:AE:A6:2E:3C"
+        "A3:7E:FA:91:57:C1:71:61:8E:8C:18:62:B0:D0:AB:92:0C:42:C1:77:E4:D1:00:64:13:27:B3:C5:9A:67:A6:36"
       ]
     }
   }
