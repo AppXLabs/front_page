@@ -52,7 +52,7 @@ export default function JaanuJiPage() {
                         className="inline-flex items-center hover:opacity-90 transition-opacity"
                     >
                         <Image
-                            src="/notifypay/google_play.png"
+                            src="/google_play.png"
                             alt="Get it on Google Play"
                             width={220}
                             height={68}

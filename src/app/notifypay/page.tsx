@@ -66,7 +66,7 @@ export default function NotifyPayPage() {
                                     className="hover:opacity-90 transition-opacity"
                                 >
                                     <Image
-                                        src="/notifypay/google_play.png"
+                                        src="/google_play.png"
                                         alt="Get it on Google Play"
                                         width={200}
                                         height={60}
@@ -244,7 +244,7 @@ export default function NotifyPayPage() {
                             className="hover:opacity-90 transition-opacity"
                         >
                             <Image
-                                src="/notifypay/google_play.png"
+                                src="/google_play.png"
                                 alt="Get it on Google Play"
                                 width={200}
                                 height={60}
@@ -271,7 +271,7 @@ export default function NotifyPayPage() {
                     className="shadow-2xl hover:scale-105 transition-transform pointer-events-auto"
                 >
                     <Image
-                        src="/notifypay/google_play.png"
+                        src="/google_play.png"
                         alt="Get it on Google Play"
                         width={180}
                         height={53}

@@ -8,6 +8,7 @@ export const APP_SUBDOMAINS = {
     jaanuji: "/jaanuji",
     godwall: "/godwall",
     astroai: "/astroai",
+    "flow-wispr": "/flow-wispr",
     // Future apps can be added here
 } as const;
 
