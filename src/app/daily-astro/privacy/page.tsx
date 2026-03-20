@@ -2,17 +2,18 @@
 
 import { getDocument } from "@/data/utils";
 import Link from "next/link";
-import { ArrowLeft, Sparkles } from "lucide-react";
+import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
 
-export default function AstroAIPrivacyPolicy() {
-    const document = getDocument("astroai", "privacy");
+export default function DailyAstroPrivacyPolicy() {
+    const document = getDocument("daily-astro", "privacy");
 
     if (!document) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-white text-gray-900">
                 <div className="text-center">
                     <h1 className="text-2xl font-bold mb-2">Document not found</h1>
-                    <Link href="/astroai" className="text-purple-600 hover:text-purple-700 underline">
+                    <Link href="/daily-astro" className="text-purple-600 hover:text-purple-700 underline">
                         Return to Home
                     </Link>
                 </div>
@@ -25,13 +26,13 @@ export default function AstroAIPrivacyPolicy() {
             {/* Navigation */}
             <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-                    <Link href="/astroai" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                        <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                            <Sparkles className="w-4 h-4" />
+                    <Link href="/daily-astro" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                        <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
+                            <Image src="/daily-astro/logo.png" alt="Daily Astro Logo" width={32} height={32} className="object-cover" />
                         </div>
-                        <span className="text-xl font-bold tracking-tight text-gray-900">Astro AI</span>
+                        <span className="text-xl font-bold tracking-tight text-gray-900">Daily Astro</span>
                     </Link>
-                    <Link href="/astroai" className="text-sm font-medium text-gray-500 hover:text-purple-600 transition-colors flex items-center gap-1">
+                    <Link href="/daily-astro" className="text-sm font-medium text-gray-500 hover:text-purple-600 transition-colors flex items-center gap-1">
                         <ArrowLeft className="w-4 h-4" />
                         Back to Home
                     </Link>
@@ -68,11 +69,11 @@ export default function AstroAIPrivacyPolicy() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-6 text-sm">
                     <p className="text-gray-500">&copy; 2026 AppXLabs. All cosmic rights reserved.</p>
                     <div className="flex gap-6 font-medium">
-                        <Link href="/astroai/terms" className="text-gray-500 hover:text-purple-600 transition-colors">
+                        <Link href="/daily-astro/terms" className="text-gray-500 hover:text-purple-600 transition-colors">
                             Terms of Service
                         </Link>
-                        <Link href="/astroai" className="text-gray-500 hover:text-purple-600 transition-colors">
-                            Astro AI Home
+                        <Link href="/daily-astro" className="text-gray-500 hover:text-purple-600 transition-colors">
+                            Daily Astro Home
                         </Link>
                     </div>
                 </div>

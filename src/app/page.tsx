@@ -6,7 +6,7 @@ const appIcons: Record<string, React.ReactNode> = {
     notifypay: <Smartphone className="w-5 h-5" />,
     jaanuji: <Heart className="w-5 h-5" />,
     godwall: <Sparkle className="w-5 h-5" />,
-    astroai: <Sparkles className="w-5 h-5" />,
+    "daily-astro": <Sparkles className="w-5 h-5" />,
     "flow-wispr": <Mic className="w-5 h-5" />,
 };
 

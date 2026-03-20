@@ -1,15 +1,15 @@
 import { AppLegalDocuments } from "../types";
 
-export const astroaiDocuments: AppLegalDocuments = {
+export const dailyAstroDocuments: AppLegalDocuments = {
     privacy: {
-        title: "Astro AI Privacy Policy",
+        title: "Daily Astro Privacy Policy",
         lastUpdated: "March 3, 2026",
         contactEmail: "info@appxlab.space",
         content: `
       <section>
         <h2>1. Introduction</h2>
         <p>
-          Welcome to Astro AI. We value your privacy and are committed to protecting your personal data. 
+          Welcome to Daily Astro. We value your privacy and are committed to protecting your personal data. 
           This Privacy Policy explains how we collect, use, and safeguard your information when you use our AI-powered astrology application.
         </p>
       </section>
@@ -17,7 +17,7 @@ export const astroaiDocuments: AppLegalDocuments = {
       <section>
         <h2>2. Information We Collect</h2>
         <p>
-          To provide accurate and personalized astrological insights, Astro AI collects information you provide directly to us:
+          To provide accurate and personalized astrological insights, Daily Astro collects information you provide directly to us:
         </p>
         <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 1rem;">
           <li><strong>Birth Data:</strong> Your date of birth, precise time of birth, and place of birth are required to calculate your unique natal chart and provide daily horoscopes.</li>
@@ -28,7 +28,7 @@ export const astroaiDocuments: AppLegalDocuments = {
       <section>
         <h2>3. AI Data Processing & Analysis</h2>
         <p>
-          Astro AI uses advanced artificial intelligence algorithms to analyze your astrological data. 
+          Daily Astro uses advanced artificial intelligence algorithms to analyze your astrological data. 
           The AI processes your birth details against planetary positions to generate personalized readings. 
           While we use AI to enhance the quality of insights, your raw personal data remains protected and is used only for the benefit of your experience within the app.
         </p>
@@ -70,7 +70,7 @@ export const astroaiDocuments: AppLegalDocuments = {
         </p>
         <p><strong>To request account deletion:</strong></p>
         <p>
-          Please send an email to <a href="mailto:info@appxlab.space" style="color: #a78bfa;">info@appxlab.space</a> with the subject line "Astro AI Account Deletion Request". 
+          Please send an email to <a href="mailto:info@appxlab.space" style="color: #a78bfa;">info@appxlab.space</a> with the subject line "Daily Astro Account Deletion Request". 
           Include your registered details in the email body. We will process your request and permanently delete your data within 30 days, in compliance with Google Play Store policies.
         </p>
       </section>
@@ -86,7 +86,7 @@ export const astroaiDocuments: AppLegalDocuments = {
       <section>
         <h2>9. Children's Privacy</h2>
         <p>
-          Astro AI is not intended for use by children under the age of 18. We do not knowingly collect personal information 
+          Daily Astro is not intended for use by children under the age of 18. We do not knowingly collect personal information 
           from children. If we discover such data has been collected, we will delete it immediately.
         </p>
       </section>
@@ -99,14 +99,14 @@ export const astroaiDocuments: AppLegalDocuments = {
     `
     },
     terms: {
-        title: "Astro AI Terms & Conditions",
+        title: "Daily Astro Terms & Conditions",
         lastUpdated: "March 3, 2026",
         contactEmail: "info@appxlab.space",
         content: `
       <section>
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By downloading, installing, or using the Astro AI application, you agree to be bound by these Terms and Conditions. 
+          By downloading, installing, or using the Daily Astro application, you agree to be bound by these Terms and Conditions. 
           If you do not agree to these terms, please do not use the app.
         </p>
       </section>
@@ -114,7 +114,7 @@ export const astroaiDocuments: AppLegalDocuments = {
       <section>
         <h2>2. Description of Service</h2>
         <p>
-          Astro AI provides artificial intelligence-powered astrological insights, predictions, and natal chart analysis. 
+          Daily Astro provides artificial intelligence-powered astrological insights, predictions, and natal chart analysis. 
           Our service combines astronomical calculations with AI modeling to provide modern cosmic guidance.
         </p>
       </section>
@@ -125,7 +125,7 @@ export const astroaiDocuments: AppLegalDocuments = {
           <strong>ASTROLOGICAL READINGS ARE FOR ENTERTAINMENT PURPOSES ONLY.</strong>
         </p>
         <p>
-          Astro AI does not provide medical, legal, financial, or other professional advice. 
+          Daily Astro does not provide medical, legal, financial, or other professional advice. 
           Any insights or predictions generated by the AI should not be used as a substitute for professional consultation. 
           We are not responsible for any actions you take based on the readings provided by the app.
         </p>
@@ -159,7 +159,7 @@ export const astroaiDocuments: AppLegalDocuments = {
       <section>
         <h2>7. Limitation of Liability</h2>
         <p>
-          To the maximum extent permitted by law, Astro AI and its developers shall not be liable for any 
+          To the maximum extent permitted by law, Daily Astro and its developers shall not be liable for any 
           indirect, incidental, or consequential damages arising out of your use or inability to use the service.
         </p>
       </section>

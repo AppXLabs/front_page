@@ -2,7 +2,7 @@ import { App } from "./types";
 import { notifypayDocuments } from "./apps/notifypay";
 import { jaanujiDocuments } from "./apps/jaanuji";
 import { godwallDocuments } from "./apps/godwall";
-import { astroaiDocuments } from "./apps/astroai";
+import { dailyAstroDocuments } from "./apps/daily-astro";
 import { flowWisprDocuments } from "./apps/flow-wispr";
 
 export const apps: App[] = [
@@ -34,12 +34,13 @@ export const apps: App[] = [
         isHidden: true
     },
     {
-        id: "astroai",
-        name: "Astro AI",
+        id: "daily-astro",
+        name: "Daily Astro",
         icon: "🔭",
         description: "AI-Powered Astrology Insights",
-        documents: astroaiDocuments,
-        isLive: false
+        documents: dailyAstroDocuments,
+        isLive: true,
+        logoPath: "/daily-astro/logo.png"
     },
     {
         id: "flow-wispr",

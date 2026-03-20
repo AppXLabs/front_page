@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Sparkles, Moon, Sun, Star, Compass, Smartphone, ArrowRight } from "lucide-react";
 
-export default function AstroAIPage() {
-    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.app.astroai";
+export default function DailyAstroPage() {
+    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.app.daily-astro";
 
     return (
         <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-purple-100 selection:text-purple-900">
@@ -11,10 +11,10 @@ export default function AstroAIPage() {
             <nav className="border-b border-gray-100 bg-white/80 backdrop-blur-md sticky top-0 z-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-[0_0_15px_rgba(147,51,234,0.3)]">
-                            <Sparkles className="w-5 h-5" />
+                        <div className="w-8 h-8 rounded-lg flex items-center justify-center overflow-hidden shadow-[0_0_15px_rgba(147,51,234,0.3)]">
+                            <Image src="/daily-astro/logo.png" alt="Daily Astro Logo" width={32} height={32} className="object-cover" />
                         </div>
-                        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500">Astro AI</span>
+                        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-500">Daily Astro</span>
                     </div>
                     <a
                         href={googlePlayUrl}
@@ -46,7 +46,7 @@ export default function AstroAIPage() {
                                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-blue-600 to-cyan-600">Cosmic Wisdom</span>
                             </h1>
                             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
-                                Astro AI blends ancient astrological wisdom with advanced artificial intelligence to provide hyper-personalized insights for your life journey.
+                                Daily Astro blends ancient astrological wisdom with advanced artificial intelligence to provide hyper-personalized insights for your life journey.
                                 <span className="block mt-4 text-purple-600 font-medium italic">Discover what the stars have in store for you.</span>
                             </p>
                             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
@@ -65,22 +65,21 @@ export default function AstroAIPage() {
 
                         <div className="flex-1 relative w-full max-w-lg md:max-w-none order-1 md:order-2">
                             <div className="relative z-10 flex justify-center">
-                                {/* Astro AI Showcase */}
-                                <div className="relative group">
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-[3rem] blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
-                                    <div className="relative border-gray-200 bg-white border-[12px] rounded-[3rem] h-[600px] w-[300px] shadow-2xl overflow-hidden">
-                                        <div className="h-full w-full bg-gradient-to-b from-white to-purple-50 flex flex-col items-center justify-center p-6 text-center">
-                                            <Moon className="w-16 h-16 text-purple-600 mb-6 animate-pulse" />
-                                            <div className="space-y-4 w-full">
-                                                <div className="h-2 w-3/4 bg-gray-100 rounded-full mx-auto"></div>
-                                                <div className="h-2 w-1/2 bg-gray-100 rounded-full mx-auto"></div>
-                                                <div className="h-24 w-full border border-gray-100 rounded-2xl bg-gray-50 mt-8"></div>
-                                                <div className="grid grid-cols-2 gap-3 mt-8">
-                                                    <div className="h-12 border border-gray-100 rounded-xl bg-gray-50"></div>
-                                                    <div className="h-12 border border-gray-100 rounded-xl bg-gray-50"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                {/* Mobile Frame */}
+                                <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                                    <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute z-20"></div>
+                                    <div className="h-[32px] w-[3px] bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+                                    <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                                    <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                                    <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                                    <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800 relative z-10">
+                                        <Image
+                                            src="/daily-astro/hero.png"
+                                            alt="Daily Astro App Interface"
+                                            fill
+                                            className="object-cover"
+                                            priority
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -137,8 +136,8 @@ export default function AstroAIPage() {
                     <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
                         <div className="max-w-xs">
                             <div className="flex items-center gap-2 mb-4">
-                                <Sparkles className="w-6 h-6 text-purple-600" />
-                                <span className="text-2xl font-bold text-gray-900">Astro AI</span>
+                                <Image src="/daily-astro/logo.png" alt="Daily Astro Logo" width={24} height={24} className="rounded-md" />
+                                <span className="text-2xl font-bold text-gray-900">Daily Astro</span>
                             </div>
                             <p className="text-gray-500">Ancient wisdom for the modern soul.</p>
                         </div>
@@ -146,8 +145,8 @@ export default function AstroAIPage() {
                             <div>
                                 <h4 className="text-gray-900 font-bold mb-6">Company</h4>
                                 <ul className="space-y-4 text-gray-500">
-                                    <li><Link href="/astroai/privacy" className="hover:text-purple-600 transition-colors">Privacy Policy</Link></li>
-                                    <li><Link href="/astroai/terms" className="hover:text-purple-600 transition-colors">Terms of Service</Link></li>
+                                    <li><Link href="/daily-astro/privacy" className="hover:text-purple-600 transition-colors">Privacy Policy</Link></li>
+                                    <li><Link href="/daily-astro/terms" className="hover:text-purple-600 transition-colors">Terms of Service</Link></li>
                                 </ul>
                             </div>
                             <div>
