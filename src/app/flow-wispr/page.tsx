@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Mic, Brain, FolderOpen, Smartphone } from "lucide-react";
 
 export default function FlowWisprPage() {
-    const googlePlayUrl = "#"; // TODO: Replace with actual Google Play URL
+    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.flow.wispr";
 
     return (
         <div className="min-h-screen bg-gray-950 font-sans text-white selection:bg-yellow-400/20 selection:text-yellow-300">
