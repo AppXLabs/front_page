@@ -14,8 +14,7 @@ export const apps: App[] = [
         description: "AI-Powered Fitness Monitoring & Evolution",
         documents: shapeonDocuments,
         isLive: true,
-        logoPath: "/shapeon/logo.png",
-        color: "#a3e635"
+        logoPath: "/shapeon/logo.png"
     },
     {
         id: "notifypay",

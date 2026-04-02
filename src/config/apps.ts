@@ -9,7 +9,9 @@ export const APP_SUBDOMAINS = {
     godwall: "/godwall",
     "daily-astro": "/daily-astro",
     "flow-wispr": "/flow-wispr",
-    // Future apps can be added here
+    shapeon: "/shapeon",
+    sepon: "/shapeon",
+    sapon: "/shapeon",
 } as const;
 
 export type AppSubdomain = keyof typeof APP_SUBDOMAINS;
