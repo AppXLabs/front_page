@@ -137,13 +137,11 @@ function LegalDocsContent() {
                             <div
                                 className="prose prose-lg prose-blue max-w-none text-gray-600 leading-relaxed"
                                 dangerouslySetInnerHTML={{
-                                    __html: currentDocument.content.replace(
-                                        /<h2>/g,
-                                        '<h2 class="text-2xl font-bold text-gray-900 mt-10 mb-4">'
-                                    ).replace(
-                                        /<p>/g,
-                                        '<p class="mb-4 leading-relaxed">'
-                                    )
+                                    __html: currentDocument.content
+                                        .replace(/<h2>/g, '<h2 class="text-2xl font-bold text-gray-900 mt-16 mb-8 border-b border-gray-100 pb-4 uppercase tracking-tight">')
+                                        .replace(/<p>/g, '<p class="mb-6 leading-relaxed text-gray-600">')
+                                        .replace(/<ul>/g, '<ul class="list-disc pl-6 mb-8 space-y-3 text-gray-600">')
+                                        .replace(/<li>/g, '<li class="pl-1">')
                                 }}
                             />
 

@@ -19,4 +19,5 @@ export interface App {
     isLive: boolean;
     isHidden?: boolean;
     logoPath?: string;
+    color?: string;
 }

@@ -65,7 +65,9 @@ export default function Home() {
                                                 <div
                                                     className={`w-14 h-14 rounded-xl flex items-center justify-center text-white font-bold shadow-lg transition-transform overflow-hidden ${
                                                         isLive
-                                                            ? "bg-gradient-to-br from-blue-600 to-blue-700 hover:scale-105"
+                                                            ? app.logoPath
+                                                                ? "bg-white hover:scale-105"
+                                                                : "bg-gradient-to-br from-blue-600 to-blue-700 hover:scale-105"
                                                             : "bg-gradient-to-br from-gray-400 to-gray-500"
                                                     }`}
                                                 >
@@ -94,7 +96,10 @@ export default function Home() {
                                         </div>
                                         <p className="text-gray-600 leading-relaxed mb-4">{app.description}</p>
                                         {isLive && (
-                                            <div className="flex items-center gap-2 text-blue-600 font-medium text-sm group-hover:gap-3 transition-all">
+                                            <div
+                                                className="flex items-center gap-2 font-medium text-sm group-hover:gap-3 transition-all"
+                                                style={{ color: app.color || "#2563eb" }}
+                                            >
                                                 <span>Visit app</span>
                                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                             </div>

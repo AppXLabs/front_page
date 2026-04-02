@@ -4,8 +4,19 @@ import { jaanujiDocuments } from "./apps/jaanuji";
 import { godwallDocuments } from "./apps/godwall";
 import { dailyAstroDocuments } from "./apps/daily-astro";
 import { flowWisprDocuments } from "./apps/flow-wispr";
+import { shapeonDocuments } from "./apps/shapeon";
 
 export const apps: App[] = [
+    {
+        id: "shapeon",
+        name: "ShapeOn",
+        icon: "💪",
+        description: "AI-Powered Fitness Monitoring & Evolution",
+        documents: shapeonDocuments,
+        isLive: true,
+        logoPath: "/shapeon/logo.png",
+        color: "#a3e635"
+    },
     {
         id: "notifypay",
         name: "NotifyPay",
