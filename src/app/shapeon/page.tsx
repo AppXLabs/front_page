@@ -89,26 +89,22 @@ export default function ShapeOnPage() {
                             </div>
                         </div>
 
-                        <div className="flex-1 relative w-full max-w-md lg:max-w-none order-1 lg:order-2">
-                            <div className="relative z-10 flex justify-center">
-                                {/* Mobile Glow */}
-                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-lime-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-                                
-                                {/* Mobile Frame */}
-                                <div className="relative mx-auto border-slate-900 bg-slate-900 border-[12px] rounded-[3rem] h-[650px] w-[320px] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8),0_0_30px_rgba(163,230,53,0.1)]">
-                                    <div className="w-[160px] h-[24px] bg-slate-900 top-0 rounded-b-[1.5rem] left-1/2 -translate-x-1/2 absolute z-20 flex items-end justify-center pb-1">
-                                        <div className="w-12 h-1 bg-slate-800 rounded-full"></div>
-                                    </div>
-                                    <div className="rounded-[2.2rem] overflow-hidden w-full h-full bg-slate-950 relative">
-                                        <Image
-                                            src="/shapeon/app_showcase.png"
-                                            alt="ShapeOn Dashboard"
-                                            fill
-                                            className="object-cover"
-                                            priority
-                                        />
-                                    </div>
-                                </div>
+                        <div className="flex-1 relative w-full max-w-lg lg:max-w-none order-1 lg:order-2 flex justify-center">
+                            {/* Visual Glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-lime-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+                            
+                            <div className="relative z-10 w-full max-w-[320px] aspect-[9/18.5] rounded-[2.5rem] overflow-hidden shadow-[0_30px_100px_-20px_rgba(0,0,0,0.7),0_0_50px_rgba(163,230,53,0.15)] border border-slate-800/50">
+                                <video
+                                    className="w-full h-full object-cover"
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    poster="/shapeon/app_showcase.png"
+                                >
+                                    <source src="/shapeon/app_showcase.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                     </div>
