@@ -12,6 +12,7 @@ export const APP_SUBDOMAINS = {
     shapeon: "/shapeon",
     sepon: "/shapeon",
     sapon: "/shapeon",
+    "luna-flow": "/luna-flow",
 } as const;
 
 export type AppSubdomain = keyof typeof APP_SUBDOMAINS;

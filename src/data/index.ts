@@ -5,6 +5,7 @@ import { godwallDocuments } from "./apps/godwall";
 import { dailyAstroDocuments } from "./apps/daily-astro";
 import { flowWisprDocuments } from "./apps/flow-wispr";
 import { shapeonDocuments } from "./apps/shapeon";
+import { lunaFlowDocuments } from "./apps/luna-flow";
 
 export const apps: App[] = [
     {
@@ -60,7 +61,16 @@ export const apps: App[] = [
         documents: flowWisprDocuments,
         isLive: true,
         logoPath: "/flow-wispr/logo.png"
-    }
+    },
+    {
+        id: "luna-flow",
+        name: "Luna Flow",
+        icon: "🌙",
+        description: "Your Gentle Period & Cycle Companion",
+        documents: lunaFlowDocuments,
+        isLive: true,
+        logoPath: "/luna-flow/logo.png"
+    },
     // Add more apps here as they are created
 ];
 
