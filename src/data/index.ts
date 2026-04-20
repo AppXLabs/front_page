@@ -69,7 +69,7 @@ export const apps: App[] = [
         description: "Your Gentle Period & Cycle Companion",
         documents: lunaFlowDocuments,
         isLive: true,
-        logoPath: "/luna-flow/logo.png"
+        logoPath: "/luna-flow/flow_logo.png"
     },
     // Add more apps here as they are created
 ];

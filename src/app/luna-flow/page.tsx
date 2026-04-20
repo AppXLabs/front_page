@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Heart, Moon, CalendarDays, Shield, Sparkles, Bell, Smartphone, Flower2, Droplets } from "lucide-react";
 
 export default function LunaFlowPage() {
-    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.luna.flow.app";
+    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.luna.flow";
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-pink-50 via-fuchsia-50/50 to-purple-50 font-sans text-gray-800 selection:bg-pink-400 selection:text-white overflow-x-hidden">
@@ -24,13 +24,13 @@ export default function LunaFlowPage() {
             <nav className="border-b border-pink-200/60 bg-white/70 backdrop-blur-xl sticky top-0 z-50">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 flex items-center justify-center overflow-hidden rounded-xl bg-white shadow-md shadow-pink-200/50 border border-pink-100">
+                        <div className="w-10 h-10 flex items-center justify-center overflow-hidden rounded-xl shadow-md border border-pink-100/50">
                             <Image
-                                src="/luna-flow/logo.png"
+                                src="/luna-flow/flow_logo.png"
                                 alt="Luna Flow Logo"
                                 width={40}
                                 height={40}
-                                className="object-contain"
+                                className="object-cover w-full h-full"
                             />
                         </div>
                         <span className="text-2xl font-bold tracking-tight text-gray-800">Luna<span className="text-pink-500 font-light"> Flow</span></span>
@@ -111,13 +111,13 @@ export default function LunaFlowPage() {
 
                             {/* Phone mockup */}
                             <div className="relative z-10 w-full max-w-[280px] aspect-[9/18.5] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-pink-300/30 border border-pink-200/60 bg-gradient-to-b from-white to-pink-50 flex flex-col items-center justify-center p-8">
-                                <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-pink-100 to-purple-100 border border-pink-200 flex items-center justify-center mb-6 overflow-hidden shadow-sm">
+                                <div className="w-24 h-24 rounded-[2rem] shadow-md shadow-pink-200/40 border border-pink-100/50 flex items-center justify-center mb-6 overflow-hidden">
                                     <Image
-                                        src="/luna-flow/logo.png"
+                                        src="/luna-flow/flow_logo.png"
                                         alt="Luna Flow"
-                                        width={80}
-                                        height={80}
-                                        className="object-contain"
+                                        width={96}
+                                        height={96}
+                                        className="object-cover w-full h-full"
                                     />
                                 </div>
                                 <div className="text-center">
@@ -255,11 +255,11 @@ export default function LunaFlowPage() {
                         <div className="flex-1 flex justify-center relative">
                             <div className="absolute -top-12 -left-12 text-[180px] font-black opacity-10 leading-none select-none">🌙</div>
                             <Image
-                                src="/luna-flow/logo.png"
+                                src="/luna-flow/flow_logo.png"
                                 alt="Luna Flow App"
                                 width={400}
                                 height={400}
-                                className="max-w-full h-auto drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)] animate-float max-w-[300px]"
+                                className="max-w-full h-auto shadow-[0_20px_50px_rgba(0,0,0,0.15)] animate-float max-w-[300px] rounded-[3rem]"
                             />
                         </div>
                         {/* Background blobs */}
@@ -310,13 +310,13 @@ export default function LunaFlowPage() {
                     <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 mb-20">
                         <div className="text-center md:text-left">
                             <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
-                                <div className="w-8 h-8 flex items-center justify-center overflow-hidden rounded-lg bg-white shadow-sm border border-pink-100">
+                                <div className="w-8 h-8 flex items-center justify-center overflow-hidden rounded-lg shadow-sm border border-pink-100/50">
                                     <Image
-                                        src="/luna-flow/logo.png"
+                                        src="/luna-flow/flow_logo.png"
                                         alt="Luna Flow Logo"
                                         width={32}
                                         height={32}
-                                        className="object-contain"
+                                        className="object-cover w-full h-full"
                                     />
                                 </div>
                                 <span className="text-xl font-bold tracking-tight text-gray-800">Luna<span className="text-pink-500 font-light"> Flow</span></span>
