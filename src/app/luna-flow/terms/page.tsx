@@ -32,8 +32,8 @@ export default function LunaFlowTerms() {
             <nav className="border-b border-pink-200/60 bg-white/70 backdrop-blur-xl sticky top-0 z-50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
                     <Link href="/luna-flow" className="flex items-center gap-3 hover:opacity-80 transition-all">
-                        <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden bg-white shadow-md shadow-pink-200/50 border border-pink-100">
-                            <Image src="/luna-flow/flow_logo.png" alt="Luna Flow Logo" width={32} height={32} className="object-contain p-1" />
+                        <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden shadow-md shadow-pink-200/50 border border-pink-100">
+                            <Image src="/luna-flow/flow_logo.png" alt="Luna Flow Logo" width={40} height={40} className="object-cover w-full h-full" />
                         </div>
                         <span className="text-xl font-bold tracking-tight text-gray-800">Luna<span className="text-pink-500 font-light"> Flow</span></span>
                     </Link>
@@ -98,8 +98,8 @@ export default function LunaFlowTerms() {
             <footer className="bg-white/50 border-t border-pink-100 py-16">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-8">
                     <div className="flex items-center gap-3">
-                        <div className="w-6 h-6 rounded-md flex items-center justify-center overflow-hidden bg-white shadow-sm border border-pink-100">
-                            <Image src="/luna-flow/flow_logo.png" alt="Luna Flow Logo" width={20} height={20} className="object-contain p-0.5" />
+                        <div className="w-6 h-6 rounded-md flex items-center justify-center overflow-hidden shadow-sm border border-pink-100">
+                            <Image src="/luna-flow/flow_logo.png" alt="Luna Flow Logo" width={24} height={24} className="object-cover w-full h-full" />
                         </div>
                         <span className="text-sm font-bold text-gray-800 tracking-tight">Luna <span className="text-pink-500">Flow</span></span>
                     </div>

@@ -48,7 +48,7 @@ export const lunaFlowDocuments: AppLegalDocuments = {
             <li><strong>In-App:</strong> Navigate to Settings > Account > Delete My Data to remove all your local and cloud records.</li>
             <li><strong>Email Request:</strong> Send a deletion request to support@apxlab.space with the subject line "Data Deletion Request."</li>
           </ul>
-          Once requested, all personally identifiable health data including cycle logs, symptoms, and predictions will be permanently erased from our production databases within 30 days.
+          Once requested, all personally identifiable health data including cycle logs, symptoms, and predictions will be permanently erased from our production databases within 7 to 15 days.
         </p>
       </section>
 
@@ -78,6 +78,16 @@ export const lunaFlowDocuments: AppLegalDocuments = {
         <p>
           You have the right to access, export, correct, or delete your personal data at any time. You may also request a copy of all data we hold about you. For any privacy-related inquiries, reach out to support@apxlab.space.
         </p>
+      </section>
+    
+      <section>
+        <h2>10. Data Encryption</h2>
+        <p>We prioritize your privacy and security. All of your personal data is fully encrypted, ensuring that your information remains safe and protected from unauthorized access at all times.</p>
+      </section>
+
+      <section>
+        <h2>11. Refund Policy</h2>
+        <p>Please note that we do not entertain any refund once the service is bought. All purchases made within the application are final and non-refundable.</p>
       </section>
     `
   },

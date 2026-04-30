@@ -48,7 +48,7 @@ export const shapeonDocuments: AppLegalDocuments = {
             <li><strong>In-App:</strong> Navigate to Settings > Account > Delete Data to wipe your local and cloud records.</li>
             <li><strong>Email Request:</strong> Send a deletion request to support@apxlab.space.</li>
           </ul>
-          Once requested, all personally identifiable health metrics and food logs will be permanently erased from our production databases within 30 days.
+          Once requested, all personally identifiable health metrics and food logs will be permanently erased from our production databases within 7 to 15 days.
         </p>
       </section>
 
@@ -72,6 +72,16 @@ export const shapeonDocuments: AppLegalDocuments = {
         <p>
           You have the right to access, export, or audit your data. For any privacy inquiries, reach out to support@apxlab.space.
         </p>
+      </section>
+    
+      <section>
+        <h2>10. Data Encryption</h2>
+        <p>We prioritize your privacy and security. All of your personal data is fully encrypted, ensuring that your information remains safe and protected from unauthorized access at all times.</p>
+      </section>
+
+      <section>
+        <h2>11. Refund Policy</h2>
+        <p>Please note that we do not entertain any refund once the service is bought. All purchases made within the application are final and non-refundable.</p>
       </section>
     `
   },

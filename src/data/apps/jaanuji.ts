@@ -45,7 +45,7 @@ export const jaanujiDocuments: AppLegalDocuments = {
         <p><strong>To request account deletion:</strong></p>
         <p>
             Please send an email to <a href="mailto:info@appxlab.space" style="color: #ec4899;">info@appxlab.space</a> with the subject line "Account Deletion Request". 
-            Include your registered details in the email body. We will process your request and permanently delete your data within the timeframe required by applicable laws (usually within 30 days).
+            Include your registered details in the email body. We will process your request and permanently delete your full data within the timeframe required by applicable laws (usually within 7 to 15 days).
         </p>
       </section>
 
@@ -63,6 +63,21 @@ export const jaanujiDocuments: AppLegalDocuments = {
         <h2>7. Contact Us</h2>
         <p>If you have any questions or concerns about this Privacy Policy or our practices, please search no further and contact us at:</p>
         <p><strong>Email:</strong> <a href="mailto:info@appxlab.space" style="color: #ec4899;">info@appxlab.space</a></p>
+      </section>
+    
+      <section>
+        <h2>10. Data Encryption</h2>
+        <p>We prioritize your privacy and security. All of your personal data is fully encrypted, ensuring that your information remains safe and protected from unauthorized access at all times.</p>
+      </section>
+
+      <section>
+        <h2>11. Refund Policy</h2>
+        <p>Please note that we do not entertain any refund once the service is bought. All purchases made within the application are final and non-refundable.</p>
+      </section>
+
+      <section>
+        <h2>12. No Sexual Content Supported</h2>
+        <p>We do not support any sexual data or content. We do not want to be related to porn, sexuality, or any sexually explicit material. Any such content is strictly prohibited on our platform.</p>
       </section>
     `
   },

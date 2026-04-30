@@ -95,7 +95,7 @@ export const godwallDocuments: AppLegalDocuments = {
           <strong>To request account deletion:</strong>
         </p>
         <p>
-          Please send an email to <a href="mailto:info@appxlab.space" style="color: #60a5fa; text-decoration: underline;">info@appxlab.space</a> with the subject line "Account Deletion Request". Include your registered details in the email body. We will process your request and permanently delete your data within the timeframe required by applicable laws (usually within 30 days).
+          Please send an email to <a href="mailto:info@appxlab.space" style="color: #60a5fa; text-decoration: underline;">info@appxlab.space</a> with the subject line "Account Deletion Request". Include your registered details in the email body. We will process your request and permanently delete your full data within the timeframe required by applicable laws (usually within 7 to 15 days).
         </p>
       </section>
 
@@ -113,9 +113,19 @@ export const godwallDocuments: AppLegalDocuments = {
           If you have any questions about this Privacy Policy, please contact us at <a href="mailto:info@appxlab.space" style="color: #60a5fa; text-decoration: underline;">info@appxlab.space</a>
         </p>
       </section>
+    
+      <section>
+        <h2>10. Data Encryption</h2>
+        <p>We prioritize your privacy and security. All of your personal data is fully encrypted, ensuring that your information remains safe and protected from unauthorized access at all times.</p>
+      </section>
+
+      <section>
+        <h2>11. Refund Policy</h2>
+        <p>Please note that we do not entertain any refund once the service is bought. All purchases made within the application are final and non-refundable.</p>
+      </section>
     `
-    },
-    terms: {
+  },
+  terms: {
         title: "God Wallpapers Terms & Conditions",
         lastUpdated: "January 19, 2025",
         contactEmail: "info@appxlab.space",

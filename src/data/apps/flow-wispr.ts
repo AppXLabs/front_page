@@ -71,7 +71,7 @@ export const flowWisprDocuments: AppLegalDocuments = {
       <section>
         <h2>8. Delete Your Data</h2>
         <p>
-          If you'd like us to remove personal data associated with your Flow Wispr account, please email <a href="mailto:info@appxlab.space" style="color: #facc15; text-decoration: underline;">info@appxlab.space</a> with your request and any relevant account details. We'll reply with verification steps and process the deletion promptly.
+          If you'd like us to remove personal data associated with your Flow Wispr account, please email <a href="mailto:info@appxlab.space" style="color: #facc15; text-decoration: underline;">info@appxlab.space</a> with your request and any relevant account details. We'll reply with verification steps and process the deletion of your full data within 7 to 15 days.
         </p>
       </section>
 
@@ -87,6 +87,16 @@ export const flowWisprDocuments: AppLegalDocuments = {
         <p>
           If you have questions about this Privacy Policy, contact us at <a href="mailto:info@appxlab.space" style="color: #facc15; text-decoration: underline;">info@appxlab.space</a>
         </p>
+      </section>
+    
+      <section>
+        <h2>10. Data Encryption</h2>
+        <p>We prioritize your privacy and security. All of your personal data is fully encrypted, ensuring that your information remains safe and protected from unauthorized access at all times.</p>
+      </section>
+
+      <section>
+        <h2>11. Refund Policy</h2>
+        <p>Please note that we do not entertain any refund once the service is bought. All purchases made within the application are final and non-refundable.</p>
       </section>
     `
   },
