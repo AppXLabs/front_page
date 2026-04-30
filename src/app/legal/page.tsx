@@ -9,10 +9,9 @@ import { ArrowLeft, FileText, Smartphone } from "lucide-react";
 
 function LegalDocsContent() {
     const searchParams = useSearchParams();
-    const [selectedApp, setSelectedApp] = useState<string>("notifypay");
-    const [selectedDocType, setSelectedDocType] = useState<string>("terms");
-
     const apps = getAllApps();
+    const [selectedApp, setSelectedApp] = useState<string>(() => apps[0]?.id ?? "");
+    const [selectedDocType, setSelectedDocType] = useState<string>("privacy");
 
     // Handle URL parameters for direct linking
     useEffect(() => {
@@ -21,6 +20,8 @@ function LegalDocsContent() {
 
         if (app && isValidApp(app)) {
             setSelectedApp(app);
+        } else if (apps.length > 0) {
+            setSelectedApp(apps[0].id);
         }
 
         if (doc && isValidDocType(doc)) {
@@ -45,9 +46,9 @@ function LegalDocsContent() {
                 </div>
             </header>
 
-            <div className="w-full flex flex-col md:flex-row min-h-[calc(100vh-64px)]">
+            <div className="w-full flex flex-col md:flex-row h-[calc(100vh-64px)]">
                 {/* Apps Sidebar */}
-                <div className="w-full md:w-64 bg-gray-100 border-b md:border-b-0 md:border-r border-gray-200 p-4 md:p-6 overflow-x-auto md:overflow-visible flex md:flex-col gap-2 shrink-0">
+                <div className="w-full md:w-64 bg-gray-100 border-b md:border-b-0 md:border-r border-gray-200 p-4 md:p-6 overflow-x-auto md:overflow-y-auto flex md:flex-col gap-2 shrink-0">
                     <div>
                         <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4 hidden md:block">
                             Select App
@@ -86,7 +87,7 @@ function LegalDocsContent() {
                 </div>
 
                 {/* Document Type Selector - Desktop Sidebar / Mobile Top */}
-                <div className="w-full md:w-64 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200 p-4 md:p-6 shrink-0">
+                <div className="w-full md:w-64 bg-gray-50 border-b md:border-b-0 md:border-r border-gray-200 p-4 md:p-6 shrink-0 md:overflow-y-auto">
                     <h2 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4 hidden md:block">
                         Document Type
                     </h2>
