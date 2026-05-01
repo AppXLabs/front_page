@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CheckCircle2, Activity, Zap, TrendingUp, Apple, Smartphone, LayoutDashboard, BrainCircuit } from "lucide-react";
 
 export default function ShapeOnPage() {
-    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.apxlab.shapeon";
+    const googlePlayUrl = "https://play.google.com/store/apps/details?id=com.shapeon.app";
 
     return (
         <div className="min-h-screen bg-slate-950 font-sans text-slate-200 selection:bg-lime-400 selection:text-black">
