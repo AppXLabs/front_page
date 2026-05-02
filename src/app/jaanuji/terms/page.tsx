@@ -27,9 +27,9 @@ export default function JaanuJiTerms() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
                     <Link href="/jaanuji" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                         <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center overflow-hidden shadow-sm border border-pink-100">
-                            <img src="/jaanuji/logo.webp" alt="Jaanu Ji Logo" className="w-full h-full object-contain p-0.5" />
+                            <img src="/jaanuji/logo.webp" alt="Janu Logo" className="w-full h-full object-contain p-0.5" />
                         </div>
-                        <span className="text-xl font-bold tracking-tight text-gray-900">Jaanu Ji</span>
+                        <span className="text-xl font-bold tracking-tight text-gray-900">Janu</span>
                     </Link>
                     <Link href="/jaanuji" className="text-sm font-medium text-gray-600 hover:text-pink-600 transition-colors flex items-center gap-1">
                         <ArrowLeft className="w-4 h-4" />
@@ -66,13 +66,13 @@ export default function JaanuJiTerms() {
             {/* Footer */}
             <footer className="bg-white/50 border-t border-pink-100 py-12">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
-                    <p className="text-gray-500 text-sm">&copy; 2025 Jaanu Ji. All rights reserved.</p>
+                    <p className="text-gray-500 text-sm">&copy; 2025 Janu. All rights reserved.</p>
                     <div className="flex gap-6 text-sm font-medium">
                         <Link href="/jaanuji/privacy" className="text-gray-600 hover:text-pink-600 transition-colors">
                             Privacy Policy
                         </Link>
                         <Link href="/jaanuji" className="text-gray-600 hover:text-pink-600 transition-colors">
-                            Jaanu Ji Home
+                            Janu Home
                         </Link>
                     </div>
                 </div>

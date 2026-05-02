@@ -14,13 +14,13 @@ export default function JaanuJiPage() {
                         <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden shadow-lg shadow-pink-200">
                             <Image
                                 src="/jaanuji/logo.webp"
-                                alt="Jaanu Ji Logo"
+                                alt="Janu Logo"
                                 width={40}
                                 height={40}
                                 className="object-cover"
                             />
                         </div>
-                        <span className="text-xl font-bold tracking-tight text-gray-900">Jaanu Ji</span>
+                        <span className="text-xl font-bold tracking-tight text-gray-900">Janu</span>
                     </div>
                     <a
                         href={GOOGLE_PLAY_URL}
@@ -75,7 +75,7 @@ export default function JaanuJiPage() {
                     <div className="relative w-full h-full min-h-[600px] max-h-[calc(100vh-4rem)]">
                         <Image
                             src="/jaanuji/mockup.png"
-                            alt="Jaanu Ji App Screenshot"
+                            alt="Janu App Screenshot"
                             fill
                             className="object-contain object-center"
                             priority
@@ -87,7 +87,7 @@ export default function JaanuJiPage() {
             {/* Footer */}
             <footer className="flex-shrink-0 border-t border-pink-100 py-4 px-4 bg-white/50">
                 <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 gap-3">
-                    <div>&copy; 2025 Jaanu Ji. All rights reserved.</div>
+                    <div>&copy; 2025 Janu. All rights reserved.</div>
                     <div className="flex gap-4">
                         <Link href="/jaanuji/privacy" className="hover:text-pink-600 transition-colors">
                             Privacy Policy

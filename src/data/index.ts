@@ -28,7 +28,7 @@ export const apps: App[] = [
     },
     {
         id: "jaanuji",
-        name: "Jaanu Ji",
+        name: "Janu",
         icon: "♥",
         description: "Chat. Joy. Love.",
         documents: jaanujiDocuments,
